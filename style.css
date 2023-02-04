@@ -88,6 +88,7 @@ main {
 .card {
   width: 32rem;
   position: relative;
+  animation: animation 1s 700ms;
 }
 
 .card img {

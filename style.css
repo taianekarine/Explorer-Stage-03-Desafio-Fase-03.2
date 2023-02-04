@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 320px) {
+:root {
+  font-size: 62.5%;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-p: 2rem;
+  --fs-p-small: 1rem;
+
+
+  --color-white-000: #FFFFFF;
+  --color-white-100: #EFF1FF;
+  --color-white-101: #FEEAFA;
+  --color-pink-300: #CBC0D3;
+  --color-blue-300: #8E9AAF;
+  --color-blue-600: #4A4E69;
+  --color-blue-800: #23053A;
+
+  --ff-pattern: 'Staatliches', cursive;
+  --ff-single: 'Palanquin', sans-serif;
+  --ff-footer: 'Open Sans', sans-serif;
+  --ff-after: 'Roboto', sans-serif;
+}
+
+#page {
+  width: 32rem;
+  margin: 0 auto;
+  background-color: var(--color-white-100);
+}
+
+header {
+  padding: 3.2rem auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-blue-300);
+}
+
+ #logo-1 {
+  display: none;
+}
+
+#logo-2 {
+  margin: 3.2rem 5rem 3.2rem 4rem;
+  animation: spin 2s 700ms infinite;
+
+}
+
+header h1 span {
+  background-color: var(--color-pink-300);
+  color: var(--color-white-000);
+  font-family: var(--ff-pattern);
+  font-size: var(--fs-h1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32rem;
+  height: 4.9rem;
+  line-height: 4.8rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.05em;
+  margin-bottom: 2.9rem;
+}
+
+#text {
+  font-family: var(--ff-single);
+  color: var(--color-blue-800);
+  font-size: var(--fs-p);
+  width: 30rem;
+  height: 7.5rem;
+  margin: 10.4rem auto 15.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+main {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.card {
+  width: 32rem;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h2 span {
+  font-family: var(--ff-pattern);
+  font-size: var(--fs-h2);
+  color: var(--color-blue-600);
+  background-color: var(--color-white-101);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 3.5rem;
+  padding: 0 2.4rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+}
+
+@media (min-width: 700px) {
+  #page {
+    width: 38.4rem;
+  }
+
+  header h1 span {
+    width: 38.4rem;
+  }
+
+  main {
+    place-items: center;
+  }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleX(55px);
+  }
+  
+}

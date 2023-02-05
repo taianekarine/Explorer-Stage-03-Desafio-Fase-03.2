@@ -14,13 +14,13 @@
   --fs-p-small: 1rem;
 
 
-  --color-white-000: #FFFFFF;
-  --color-white-100: #EFF1FF;
-  --color-white-101: #FEEAFA;
-  --color-pink-300: #CBC0D3;
-  --color-blue-300: #8E9AAF;
-  --color-blue-600: #4A4E69;
-  --color-blue-800: #23053A;
+  --c-white-000: #FFFFFF;
+  --c-white-100: #EFF1FF;
+  --c-white-101: #FEEAFA;
+  --c-pink-300: #CBC0D3;
+  --c-blue-300: #8E9AAF;
+  --c-blue-600: #4A4E69;
+  --c-blue-800: #23053A;
 
   --ff-pattern: 'Staatliches', cursive;
   --ff-single: 'Palanquin', sans-serif;
@@ -31,14 +31,14 @@
 #page {
   width: 32rem;
   margin: 0 auto;
-  background-color: var(--color-white-100);
+  background-color: var(--c-white-100);
 }
 
 header {
   padding: 3.2rem auto;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-blue-300);
+  background-color: var(--c-blue-300);
 }
 
  #logo-1 {
@@ -47,14 +47,15 @@ header {
 
 #logo-2 {
   padding-top: 3.2rem;
-  margin: 3.2rem 5rem 3.2rem 4rem;
-  animation: spin 2s 700ms infinite;
-
+  margin: 3.2rem auto;
+  animation: spin 4s 700ms infinite;
+  width: 17rem;
+  height: 17rem;
 }
 
 header h1 span {
-  background-color: var(--color-pink-300);
-  color: var(--color-white-000);
+  background-color: var(--c-pink-300);
+  color: var(--c-white-000);
   font-family: var(--ff-pattern);
   font-size: var(--fs-h1);
   display: flex;
@@ -68,9 +69,13 @@ header h1 span {
   margin-bottom: 2.9rem;
 }
 
+header p {
+  display: none;
+}
+
 #text {
   font-family: var(--ff-single);
-  color: var(--color-blue-800);
+  color: var(--c-blue-800);
   font-size: var(--fs-p);
   width: 30rem;
   height: 7.5rem;
@@ -80,28 +85,28 @@ header h1 span {
   justify-content: center;
 } 
 
-main {
+#wrapper-image {
   display: grid;
   gap: 3.2rem;
 }
 
-.card {
+#wrapper-image .card {
   width: 32rem;
   position: relative;
-  animation: animation 1s 700ms;
+  animation: animation 4s;
 }
 
-.card img {
+#wrapper-image .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.card h2 span {
+#wrapper-image .card h2 span {
   font-family: var(--ff-pattern);
   font-size: var(--fs-h2);
-  color: var(--color-blue-600);
-  background-color: var(--color-white-101);
+  color: var(--c-blue-600);
+  background-color: var(--c-white-101);
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
@@ -116,18 +121,12 @@ main {
 }
 }
 
-@media (min-width: 700px) {
-  #page {
-    width: 38.4rem;
-  }
+#wrapper-image div:nth-child(2) {
+  display: none;
+}
 
-  header h1 span {
-    width: 38.4rem;
-  }
-
-  main {
-    place-items: center;
-  }
+#wrapper-image div:nth-child(6) {
+  display: none;
 }
 
 
@@ -154,3 +153,20 @@ main {
   }
   
 }
+
+@media (min-width: 700px) {
+  #page {
+    width: 38.4rem;
+  }
+
+  header h1 span {
+    width: 38.4rem;
+  }
+
+  #wrapper-image {
+    place-items: center;
+  }
+}
+
+
+

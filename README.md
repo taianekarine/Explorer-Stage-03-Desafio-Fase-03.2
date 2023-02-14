@@ -1,5 +1,5 @@
 
-<h1 align="center"> Projeto - Space Cream </h1>
+<h1 align="center"> Projeto - Space Cream Mobile</h1>
 
 <p align="center">
 Hora de colocar tudo o que foi visto no stage 03 do projeto Explorer da Rocketseat em pratica, criando um aplicativo para mobile na web.
@@ -45,7 +45,7 @@ https://www.figma.com/file/9tsQ67wtO3JjuaBiHKWbwU/Stage-03---Mobile-First-(Copy)
 - Nova propriedade do CSS: object-fit;
 - Position;
 - Transições e Transformações;
-- Animações
+- Animações;
 
 ## Você pode acessar o projeto e ver seus efeitos no site abaixo
 https://space-cream-beta.vercel.app/
